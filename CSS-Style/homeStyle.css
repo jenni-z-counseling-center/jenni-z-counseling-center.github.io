@@ -634,6 +634,32 @@ input:checked + .slider:before {
 {
     
 }
+#client_portal_container
+{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    position:absolute;
+    top:10px;
+    left:10px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    
+   
+}
+#client_portal_text
+{
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+}
+#client_portal_text:hover
+{
+    
+    opacity: .85;
+}
+
+
 
 
 
@@ -967,5 +993,16 @@ input:checked + .slider:before {
 	   background-size: cover;
 
 	}
+	#client_portal_container
+	{
+		display:none;
+
+
+	}
+	#client_portal_text
+	{
+		isplay: none;
+	}
+  
 
 }
