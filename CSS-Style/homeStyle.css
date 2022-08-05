@@ -947,7 +947,7 @@ input:checked + .slider:before {
 	    margin-left: auto;
 	    margin-right: auto;
 	    width:100%;
-	    height:30vh;
+	    height:25vh;
 
 	    display: block;
 	    color:black;
