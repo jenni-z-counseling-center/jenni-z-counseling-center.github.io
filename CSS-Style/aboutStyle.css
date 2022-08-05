@@ -426,7 +426,7 @@ input:checked + .slider:before {
     font-weight: 400;
     font-stretch: 100%;
     letter-spacing: 0px;
-    font-size: 40px;
+    font-size: 25px;
     width:80%;
     position: relative;
     
@@ -471,6 +471,21 @@ input:checked + .slider:before {
 
 @media only screen and (max-device-width:800px) 
 {
+	#title_two
+	{
+	    color:white;
+
+	    font-weight: 400;
+	    font-stretch: 100%;
+	    letter-spacing: 0px;
+	    font-size: 40px;
+	    width:80%;
+	    position: relative;
+
+	    text-align: left;
+	    margin-top:20px;
+
+	}
     
     #bar
     {
