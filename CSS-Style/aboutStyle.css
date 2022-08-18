@@ -468,6 +468,11 @@ input:checked + .slider:before {
     margin-top:30px;
     line-height: 30px;
 }
+#copy
+{
+     width:100%;
+     text-align: center;
+}
 
 @media only screen and (max-device-width:800px) 
 {
