@@ -984,7 +984,7 @@ input:checked + .slider:before {
 	}
 	#para_image_divider
 	{
-	   background-image: url("../images/home/sky.jpg");
+	   background-image: url("../images/home/sky_mobile.jpg");
 	   height:100%;
 
 	   background-attachment: fixed;
