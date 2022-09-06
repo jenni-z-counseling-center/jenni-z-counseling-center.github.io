@@ -32,11 +32,11 @@ header
     width: 100%;
     height: auto;
     text-align: center;
-   
+    overflow: auto;
     background-color: #01729A;;
     padding-top:0px;
     padding-bottom: 10px;
-    margin-bottom: 0px;
+    margin-top: 0px;
     display: none;
     
    
@@ -119,16 +119,7 @@ input:checked + .slider:before {
 .slider.round:before{
     border-radius: 50%;
 }
-#menuImage
-{
-    position: absolute;
-    top:20px;
-    right:20px;
-	float:right;
-	display: none;
-    height: 30px;
-    
-}
+
 #nav_container
 {
 	font-size: 20px;
@@ -156,15 +147,8 @@ input:checked + .slider:before {
 	margin-top: 15px;
     
 }
-#logoImage_mobile
-{
+  
 
-    height: 40px;
-	float:left;
-	margin-left: 0px;
-	margin-top: 15px;
-    
-}
 #bar
 {
     height : 170px;
@@ -473,7 +457,24 @@ input:checked + .slider:before {
      width:100%;
      text-align: center;
 }
+#menuImage
+{
+    position: absolute;
+    top:40px;
+    right:50px;
+    float:right;
+    height: 60px;
+    display:none;
 
+}
+#logoImage_mobile
+{
+        position: absolute;
+        top:10px;
+        left:50px;
+        height:90px;
+        display: none;
+}
 @media only screen and (max-device-width:800px) 
 {
 	#title_two
@@ -520,10 +521,10 @@ input:checked + .slider:before {
     #logoImage_mobile
     {
         position: absolute;
-        top:40px;
+        top:30px;
         left:50px;
-        width: 280px;
-        float:left;
+        height:140px;
+        
         display: none;
     }
     .switch
@@ -621,18 +622,10 @@ input:checked + .slider:before {
         top:40px;
         right:50px;
         float:right;
-        display: none;
+        height: 90px;
 
     }
-    #logoImage_mobile
-    {
-        height: 80px;
-        float:left;
-        margin-left: 0px;
-        margin-top: 5px;
-        display: block;
-
-    }
+   
 	#about_image_one
 	{
 	    display: block;
