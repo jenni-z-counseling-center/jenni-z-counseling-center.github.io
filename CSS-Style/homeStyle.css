@@ -182,6 +182,7 @@ input:checked + .slider:before {
 	float:left;
 	margin-left: 0px;
 	margin-top: 15px;
+    display: none;
     
 }
 #bar
@@ -350,11 +351,17 @@ input:checked + .slider:before {
 #center_logo
 {
     position: absolute;
-    top:65%;
+    top:60%;
     left:50%;
-    width:200px;
+    width:250px;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    border-color: white;
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 15px 35px;
+    background-color: #01729A;
 }
 .para_image_one
 {
@@ -663,7 +670,6 @@ input:checked + .slider:before {
 
 
 
-
 @media only screen and (max-device-width:800px) 
 {
     #center_logo
@@ -951,18 +957,11 @@ input:checked + .slider:before {
         font-size: 10px;
     }
 
-    #menuImage
-    {
-        position: absolute;
-        top:40px;
-        right:50px;
-        float:right;
-        display: none;
-    }
     #logoImage_mobile
     {
 
         height: 80px;
+        display: none;
         float:left;
         margin-left: 40px;
         margin-top: 15px;
