@@ -67,27 +67,32 @@ function checkScreen()
                             //show menu button image
                             document.getElementById("menuImage").style.display = "block";
                             //show mobile logo image
-                            //document.getElementById("logoImage_mobile").style.display = "block";
+                            document.getElementById("logoImage_mobile").style.display = "block";
                              //show language switch for mobile
                             document.getElementById("switchContainer_mobile").style.display = "block";
                             
                             //Checks if screen widht is lessthen or equal to 800. 
                             // that way if someone just minimized their browser on a desktop, the screen size will still be to big
+                            //in mobile phone
                             if(screen_width <= 800)
                             {
                                 //resize nav container
-                                document.getElementById("nav_container").style.paddingTop = "120px";
+                                // this controls the height of the header, in the other files im using
+                                // the padding of the switch container to accomplish this
+                                //
+                                document.getElementById("nav_container").style.paddingTop = "160px";
                                 //resize image
                                
                                // document.getElementById("logoImage").style.height = "100px";
-                                document.getElementById("menuImage").style.height = "80px";
+                                //document.getElementById("menuImage").style.height = "80px";
                                
                             }
                             else
                             {
+                                //in mini browser
                                 //enters here when browser is minimized below or equal to 800
                                 //resize nav container
-                                document.getElementById("nav_container").style.paddingTop = "60px";
+                                //document.getElementById("nav_container").style.paddingTop = "60px";
                                 //resize image
                                 //document.getElementById("logoImage_mobile").style.height = "50px";
                                 //adjust size of center logo

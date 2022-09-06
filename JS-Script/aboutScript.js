@@ -57,21 +57,25 @@ function checkScreen()
                             document.getElementById("approach_pic_container").style.width = "100%";
                             document.getElementById("approach_info_container").style.width = "100%";
                             //document.getElementById("experience_title").style.marginTop = "30px";
+                            //*** on phone ***
                             if(screen_width <= 800)
                             {
                                 document.getElementById("switchContainer_mobile").style.paddingTop = "150px";
+                                //document.getElementById("menuImage").style.height = "80px";
                             }
                             else
                             {
+                                // *** on mini browser ***
                                 //resize nav container
                                 document.getElementById("nav_container").style.paddingTop = "60px";
                                 //resize image
-                                document.getElementById("logoImage_mobile").style.height = "90px";
+                                //document.getElementById("logoImage_mobile").style.height = "90px";
                                 //bar height
                                 document.getElementById("bar").style.height = "140px";
                                 document.getElementById("logo_container").style.display = "none";
                                 //resize nav container
-                                document.getElementById("switchContainer_mobile").style.paddingTop = "30px";
+                                document.getElementById("switchContainer_mobile").style.paddingTop = "0px";
+                                //document.getElementById("menuImage").style.height = "40px";
                             }
                             
                             

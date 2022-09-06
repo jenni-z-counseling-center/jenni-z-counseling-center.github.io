@@ -13,81 +13,8 @@ function switchLanguage() {
     window.location.href = "about.html";
 }
 
-//if(screen_width )
-function submit_email()
-{
-    'use strict';
-    var first_name, last_name, email, message,mailto_string,subject;
-    first_name = document.getElementById("email_first_name").value;
-    last_name = document.getElementById("email_last_name").value;
-    email = document.getElementById("email").value;
-    message = document.getElementById("email_message").value;
-    
-    if(first_name.length == 0)
-    {
-            document.getElementById("error").value = "Please enter first name";
-    }
-    else
-    {
-        if(first_name.length > 50)
-        {
-                document.getElementById("error").value = "First name cannot be more then 50 characters";
-        }
-        else
-        {
-            if(last_name.length == 0)
-            {
-                  document.getElementById("error").value = "Please enter last name";   
-            }
-            else
-            {
-                if(last_name.length > 50)
-                {
-                      document.getElementById("error").value = "Last name cannot be more then 50 characters";   
-                }
-                else
-                {
-                    
-                    if(email.length == 0)
-                    {
-                            document.getElementById("error").value = "Please enter email";
-                    }
-                    else
-                    {
-                        if(email.length > 256)
-                        {
-                                document.getElementById("error").value = "Email cannot be more then 256 characters";
-                        }
-                        else
-                        {
-                            if(message.length == 0)
-                            {
-                                    document.getElementById("error").value = "Please enter message";
-                            }
-                            else
-                            {
-                                if(message.length > 500)
-                                {
-                                        document.getElementById("error").value = "Message cannot be more then 500 characters";
-                                }
-                                else
-                                {
-                                    subject = "Message From Website - " + first_name + " " + last_name + " - " + email;
-                                    mailto_string = "mailto:jenniferz@jennizcounselingcenter.com?subject=" + subject + "&body=" + message;
-                                    window.open(mailto_string);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-             
-        }
-       
-    }
-    //alert(first_name + " " + last_name + " Email: " + email + " Message: " + message);
-    
-}
+
+
 function show_menu()
 {
     'use strict';
@@ -131,22 +58,25 @@ function checkScreen()
                             
                             if(screen_width <= 800)
                             {
+                                // *** mobile phone ***
                                 //resize nav container
-                                document.getElementById("nav_container").style.paddingTop = "120px";
+                                document.getElementById("switchContainer_mobile").style.paddingTop = "150px";
+                                //document.getElementById("nav_container").style.paddingTop = "120px";
                                 //resize image
                                 //document.getElementById("logo_container").style.width = "0px";
-                                document.getElementById("logoImage").style.height = "100px";
-                                document.getElementById("menuImage").style.height = "80px";
+                                //document.getElementById("logoImage").style.height = "100px";
+                               // document.getElementById("menuImage").style.height = "90px";
                                 //document.getElementById("menuImage").style.width = "100px";
                                 //bar height
                                 //document.getElementById("bar").style.height = "155px";
                             }
                             else
                             {
+                                //*** in mini browser ***
                                 //resize nav container
                                 document.getElementById("nav_container").style.paddingTop = "60px";
                                 //resize image
-                                document.getElementById("logoImage_mobile").style.height = "50px";
+                                //document.getElementById("logoImage_mobile").style.height = "50px";
                                 //bar height
                                 document.getElementById("bar").style.height = "125px";
                                 document.getElementById("logo_container").style.display = "none";
@@ -177,7 +107,7 @@ function checkScreen()
                             //resize nav container
                             document.getElementById("nav_container").style.paddingTop = "5px";
                             //resize image
-                            document.getElementById("logoImage").style.height = "80px";
+                            document.getElementById("logoImage").style.height = "120px";
                             
                             //bar height
                             document.getElementById("bar").style.height = "170px";

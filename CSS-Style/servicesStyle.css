@@ -143,7 +143,7 @@ input:checked + .slider:before {
 }
 #logoImage
 {
-	height: 80px;
+	height: 120px;
 	
 	margin-left: 0px;
 	margin-top: 15px;
@@ -151,10 +151,11 @@ input:checked + .slider:before {
 }
 #logoImage_mobile
 {
-	height: 40px;
-	float:left;
-	margin-left: 0px;
-	margin-top: 15px;   
+    position: absolute;
+    top:10px;
+    left:20px;
+    height:70px;
+    display: none;
 }
 #bar
 {
@@ -431,15 +432,7 @@ input:checked + .slider:before {
         margin-bottom: 0px;
     }
     
-    #logoImage_mobile
-    {
-        position: absolute;
-        top:40px;
-        left:50px;
-        width: 280px;
-        float:left;
-        display: none;
-    }
+   
     .switch
     {
 
@@ -479,7 +472,7 @@ input:checked + .slider:before {
         list-style-type: none; 
         width: 100%;
         height:100vh;
-        padding-top: 100px;
+        padding-top: 200px;
         margin-top: 0px;
 
 
@@ -575,14 +568,16 @@ input:checked + .slider:before {
         top:40px;
         right:50px;
         float:right;
-        display: none;
+        height: 90px;
     }
     #logoImage_mobile
     {
-        height: 80px;
-        float:left;
-        margin-left: 0px;
-        margin-top: 5px;   
+        position: absolute;
+        top:30px;
+        left:50px;
+        height:140px;
+        
+        
     }
 
 }

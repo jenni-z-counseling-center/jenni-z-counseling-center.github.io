@@ -133,11 +133,11 @@ function checkScreen()
                             if(screen_width <= 800)
                             {
                                 //resize nav container
-                                document.getElementById("nav_container").style.paddingTop = "120px";
+                                document.getElementById("switchContainer_mobile").style.paddingTop = "150px";
                                 //resize image
                                 //document.getElementById("logo_container").style.width = "0px";
-                                document.getElementById("logoImage").style.height = "100px";
-                                document.getElementById("menuImage").style.height = "100px";
+                                //document.getElementById("logoImage").style.height = "100px";
+                                //document.getElementById("menuImage").style.height = "100px";
                                 //document.getElementById("menuImage").style.width = "100px";
                                 //bar height
                                 //document.getElementById("bar").style.height = "155px";
@@ -147,7 +147,7 @@ function checkScreen()
                                 //resize nav container
                                 document.getElementById("nav_container").style.paddingTop = "60px";
                                 //resize image
-                                document.getElementById("logoImage_mobile").style.height = "50px";
+                                //document.getElementById("logoImage_mobile").style.height = "50px";
                                 //bar height
                                 document.getElementById("bar").style.height = "125px";
                                 document.getElementById("logo_container").style.display = "none";
@@ -178,7 +178,7 @@ function checkScreen()
                             //resize nav container
                             document.getElementById("nav_container").style.paddingTop = "5px";
                             //resize image
-                            document.getElementById("logoImage").style.height = "80px";
+                            document.getElementById("logoImage").style.height = "120px";
                             
                             //bar height
                             document.getElementById("bar").style.height = "170px";

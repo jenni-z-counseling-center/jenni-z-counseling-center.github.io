@@ -460,10 +460,10 @@ input:checked + .slider:before {
 #menuImage
 {
     position: absolute;
-    top:40px;
-    right:50px;
+    top:20px;
+    right:20px;
     float:right;
-    height: 60px;
+    height: 30px;
     display:none;
 
 }
@@ -471,8 +471,8 @@ input:checked + .slider:before {
 {
         position: absolute;
         top:10px;
-        left:50px;
-        height:90px;
+        left:20px;
+        height:70px;
         display: none;
 }
 @media only screen and (max-device-width:800px) 
