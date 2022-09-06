@@ -59,7 +59,7 @@ function checkScreen()
                             //document.getElementById("experience_title").style.marginTop = "30px";
                             if(screen_width <= 800)
                             {
-                                document.getElementById("switchContainer_mobile").style.paddingTop = "100px";
+                                document.getElementById("switchContainer_mobile").style.paddingTop = "150px";
                             }
                             else
                             {
@@ -71,7 +71,7 @@ function checkScreen()
                                 document.getElementById("bar").style.height = "140px";
                                 document.getElementById("logo_container").style.display = "none";
                                 //resize nav container
-                                document.getElementById("switchContainer_mobile").style.paddingTop = "20px";
+                                document.getElementById("switchContainer_mobile").style.paddingTop = "30px";
                             }
                             
                             
