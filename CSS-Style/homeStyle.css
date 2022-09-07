@@ -178,11 +178,11 @@ input:checked + .slider:before {
 #logoImage_mobile
 {
 
-    height: 40px;
-	float:left;
-	margin-left: 0px;
-	margin-top: 15px;
-    display: none;
+    position: absolute;
+        top:10px;
+        left:20px;
+        height:70px;
+        display: none;
     
 }
 #bar
@@ -637,10 +637,7 @@ input:checked + .slider:before {
     width: 100%;
     
 }
-#copy_container
-{
-    
-}
+
 #client_portal_container
 {
     width: 100%;
@@ -665,8 +662,52 @@ input:checked + .slider:before {
     
     opacity: .85;
 }
+#iphone_whole_container_one
+{
+    display: none;
+}
+#iphone_image_one
+{
+    display: none;
+}
+#iphone_center_logo
+{
+    display: none;
+}
+#iphone_whole_container_two
+{
+    display: none;
+}
+#iphone_image_two
+{
+    display: none;
+}
+.iphone_para_image_two
+{
+    display: none;
+}
+#iphone_center_text
+{
 
-
+    display: none;
+}
+#iphone_image_divider
+{
+    display: none;
+}
+#iphone_image_three
+{
+    display: none;
+}
+#iphone_today_link
+{
+    display: none;
+}
+#iphone_today_img
+{
+    display: none;
+        
+}
 
 
 
@@ -1000,5 +1041,106 @@ input:checked + .slider:before {
         float:right;
         height: 90px;
     }
+    #iphone_whole_container_one
+    {
+        width:100%;
+        display: block;
+        position: relative;
+    }
+    #iphone_image_one
+    {
+        width:100%;
+        padding: 0px;
+        border: 0px;
+        display: block;
+        position: relative;
+    }
+    #iphone_center_logo
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:500px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-color: white;
+        border-width: 8px;
+        border-style: solid;
+        border-radius: 25px;
+        padding: 15px 35px;
+        background-color: #01729A;
+        display: block;
+    }
+    #iphone_whole_container_two
+    {
+        width:100%;
+        display: block;
+        position: relative;
+    }
+    #iphone_image_two
+    {
+        width:100%;
+        padding: 0px;
+        border: 0px;
+        display: block;
+    }
+    .iphone_para_image_two
+    {
+       background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/home/mountains_iphone.jpg");
+       width:100%;
+       height: auto;
+       padding-bottom: 10vh;
+       padding-top: 10vh;
+       background-attachment:scroll;
+       background-position: center;
+       background-repeat:no-repeat;
+       background-size:auto; 
+       display: block;
+    }
+    #iphone_center_text
+    {
 
+        color: white;
+        margin:auto;
+        text-align: center;
+
+        font-family: candara, sans-serif;
+        font-weight: 500;
+        font-stretch: 100%;
+        letter-spacing:0px;
+        font-style: italic;
+
+        width:70%;
+        font-size: 60px;
+        position: relative;
+        opacity: 1;
+        display: block;
+    }
+    #iphone_image_divider
+    {
+        width:100%;
+        padding: 0px;
+        border: 0px;
+        display: block;
+        position: relative;
+    }
+    #iphone_image_three
+    {
+        width:100%;
+        padding: 0px;
+        border: 0px;
+        display: block;
+    }
+    #iphone_today_link
+    {
+        width:20%;
+        position: absolute;
+        top:400px;
+        right:30px;
+    }
+    #iphone_today_img
+    {
+        width: 100%;
+        display: block;
+    }
 }

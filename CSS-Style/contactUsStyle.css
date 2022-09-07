@@ -226,6 +226,7 @@ input:checked + .slider:before {
     color:black;
     list-style-type: none; 
     width: 100%;
+    height: 100vh;
     padding: 0px;
     margin-top: 0px;
    

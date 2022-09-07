@@ -115,16 +115,18 @@ function checkScreen()
 
 checkScreen();
 
-
+//checks to see if browesr is resized, 
+//if resized calls functions to adjust website to screen dimensions
 window.addEventListener('resize', 
     function(event){
+                        //Gets browser widht and height
                         browser_width = window.innerWidth;
                         browser_height = window.innerHeight;
-                        
+                        //Gets screen width and height
                         screen_width = screen.width;
                         screen_height = screen.height;
-                        //document.getElementById("endPageBar").innerHTML = "Width: " + screen_width + " Height: " + screen_height;
-    
+                        
+                        //calls function to adjsut website on screen and broswer dimensions
                         checkScreen();
                         
                     });

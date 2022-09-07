@@ -73,7 +73,7 @@ function submit_email()
                                 }
                                 else
                                 {
-                                    subject = "Message From Website - " + first_name + " " + last_name + " - " + email;
+                                    subject = "Website Message - " + first_name + " " + last_name + " - " + email;
                                     mailto_string = "mailto:jenniferz@jennizcounselingcenter.com?subject=" + subject + "&body=" + message;
                                     window.open(mailto_string);
                                 }

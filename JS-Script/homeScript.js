@@ -12,19 +12,34 @@ function switchLanguage() {
     swch.checked = false;
     window.location.href = "about.html";
 }
-
-
-
+//This function checks to see if this device is an apple os
+//returns true if it is apple os
+//returns false if it is not an apple os
+function iOS()
+{
+    "use strict";
+    if( /iPhone|iPad|iPod/i.test(navigator.userAgent))
+    {
+        //returns true if an apple os
+        return true;
+    }
+    else
+    {
+       //returns false if no an apple os
+       return false;
+    }
+}
+//shows mobile menu
 function show_menu()
 {
     'use strict';
-    //document.getElementsByTagName("body").style.height = "100vh";
     document.getElementById("menuImage").style.display = "none";
     document.getElementById("switchContainer_mobile").style.display = "none";
     document.getElementById("menu_show_container").style.display = "block";
     document.getElementById("close_image").style.display = "block";
     document.getElementById("supervised_container").style.display = "none";
 }
+//closes mobile menu
 function close_menu()
 {
     'use strict';
@@ -37,6 +52,8 @@ function close_menu()
                             
    
 }
+//closes the small pop up box at bottom of screen
+// that asks if want to change language
 function close_language_box()
 {
     'use strict';
@@ -46,9 +63,11 @@ function close_language_box()
                             
    
 }
+//function that checks screen size and adjust view for desktop, mobile or mini browser(when user adjust browser in desktop)
 function checkScreen()
 {
     'use strict';
+    //iOS();
     close_menu();
                         if((screen_width <= 800) || (browser_width <= 800))
                         {
@@ -79,29 +98,35 @@ function checkScreen()
                                 //resize nav container
                                 // this controls the height of the header, in the other files im using
                                 // the padding of the switch container to accomplish this
-                                //
-                                document.getElementById("nav_container").style.paddingTop = "160px";
-                                //resize image
-                               
-                               // document.getElementById("logoImage").style.height = "100px";
-                                //document.getElementById("menuImage").style.height = "80px";
-                               
+                                document.getElementById("nav_container").style.paddingTop = "160px"; 
                             }
                             else
                             {
                                 //in mini browser
                                 //enters here when browser is minimized below or equal to 800
-                                //resize nav container
-                                //document.getElementById("nav_container").style.paddingTop = "60px";
-                                //resize image
-                                //document.getElementById("logoImage_mobile").style.height = "50px";
                                 //adjust size of center logo
                                 document.getElementById("center_logo").style.width = "150px";
                                 document.getElementById("center_logo").style.borderWidth = "4px";
                                 //adjust language question/button font
                                 document.getElementById("language_container").style.fontSize = "20px";
                                 document.getElementById("language_button").style.fontSize = "20px";
+                                document.getElementById("nav_container").style.paddingTop = "70px"; 
                                 
+                            }
+                            //checks to see if it is an apple os and if it the screen is under or equal to 800px
+                            if(iOS() && (screen_width <= 800))
+                            {
+                                //removes parrallax pic containers
+                                document.getElementById("whole_container_one").style.display = "none";
+                                document.getElementById("second_container").style.display = "none";
+                                document.getElementById("image_divider").style.display = "none";
+                            }
+                            else
+                            {
+                                //removes apple os still pic containers
+                                document.getElementById("iphone_whole_container_one").style.display = "none";
+                                document.getElementById("iphone_whole_container_two").style.display = "none";
+                                document.getElementById("iphone_image_divider").style.display = "none";
                             }
                             
                             
@@ -145,7 +170,7 @@ function checkScreen()
 
 checkScreen();
 
-//checks to see if broswer is resized, 
+//checks to see if browesr is resized, 
 //if resized calls functions to adjust website to screen dimensions
 window.addEventListener('resize', 
     function(event){
