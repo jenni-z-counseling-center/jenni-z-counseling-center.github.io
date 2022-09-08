@@ -193,26 +193,13 @@ window.addEventListener('resize',
                         checkScreen();
                     });
 
-   /*
-    //if iphone user
-    if(iOS() && (screen_width <= 800))
-    {
-
-    }
-    //else if non iphone user
-    else
-    {
-        //var bi_one = '"../images/home/image_one_high.JPG"';
-        //alert("hi");
-        document.getElementById("para_image_one").style.backgroundImage = 'url(images/home/image_one_high.JPG)';
-    }
-   */
+  
 
 //For image one, this function replaces the low res image with the high res image once they have fully loaded                    
 function show_high_res_image_one()
 {
     "use strict";
-    document.getElementById("para_image_one").style.backgroundImage = 'url(images/home/image_one_high.JPG)';
+    document.getElementById("para_image_one").style.backgroundImage = 'url(images/home/image_one_high.jpg)';
  
 }
 //For image two, this function replaces the low res image with the high res image once they have fully loaded                    
@@ -233,7 +220,7 @@ function show_high_res_image_three()
 function show_iphone_high_res_image_one()
 {
     "use strict";
-    document.getElementById("iphone_image_one").src = 'images/home/iphone_image_one_high.JPG';
+    document.getElementById("iphone_image_one").src = 'images/home/iphone_image_one_high.jpg';
 }
 //For iphone image two, this function replaces the low res image with the high res image once they have fully loaded                    
 function show_iphone_high_res_image_two()
@@ -245,5 +232,5 @@ function show_iphone_high_res_image_two()
 function show_iphone_high_res_image_three()
 {
     "use strict";
-    document.getElementById("iphone_image_three").src = 'images/home/iphone_image_three_high.JPG';
+    document.getElementById("iphone_image_three").src = 'images/home/iphone_image_three_high.jpg';
 }
