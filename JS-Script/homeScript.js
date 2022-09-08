@@ -199,7 +199,7 @@ window.addEventListener('resize',
 function show_high_res_image_one()
 {
     "use strict";
-    document.getElementById("para_image_one").style.backgroundImage = 'url(images/home/image_one_high.jpg)';
+    document.getElementById("para_image_one").style.backgroundImage = 'url(images/home/image_one_high.JPG)';
  
 }
 //For image two, this function replaces the low res image with the high res image once they have fully loaded                    

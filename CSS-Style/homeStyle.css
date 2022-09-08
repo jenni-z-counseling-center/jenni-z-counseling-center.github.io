@@ -365,7 +365,7 @@ input:checked + .slider:before {
 }
 #para_image_one
 {
-   background-image: url("../images/home/image_one_low.JPG");
+   background-image: url("../images/home/image_one_low.jpg");
    
    height: 100%; 
    background-attachment: fixed;
