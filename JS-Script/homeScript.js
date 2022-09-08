@@ -1,17 +1,19 @@
+//Variables for broswer width afn height
 var browser_width = window.innerWidth;
 var browser_height = window.innerHeight;
-//document.getElementById("endPageBar").innerHTML = "Width: " + screen_width + " Height: " + screen_height;
+//variables for screen width and height
 var screen_width = screen.width;
 var screen_height = screen.height;
-
-
+//variable to identify language switch
 var swch = document.getElementById("switchOne");
+
 //switch language to english by redirecting to other page with english text
 function switchLanguage() {
     "use strict";
     swch.checked = false;
     window.location.href = "about.html";
 }
+
 //This function checks to see if this device is an apple os
 //returns true if it is apple os
 //returns false if it is not an apple os
@@ -29,6 +31,7 @@ function iOS()
        return false;
     }
 }
+
 //shows mobile menu
 function show_menu()
 {
@@ -39,6 +42,7 @@ function show_menu()
     document.getElementById("close_image").style.display = "block";
     document.getElementById("supervised_container").style.display = "none";
 }
+
 //closes mobile menu
 function close_menu()
 {
@@ -52,6 +56,7 @@ function close_menu()
                             
    
 }
+
 //closes the small pop up box at bottom of screen
 // that asks if want to change language
 function close_language_box()
@@ -63,12 +68,14 @@ function close_language_box()
                             
    
 }
+
 //function that checks screen size and adjust view for desktop, mobile or mini browser(when user adjust browser in desktop)
 function checkScreen()
 {
-    'use strict';
-    //iOS();
-    close_menu();
+                        'use strict';
+                        //closes menu incase resize screen whle mobile menu open
+                        close_menu();
+                        //Checks if screen width or browser width are 800px or below. if so enter
                         if((screen_width <= 800) || (browser_width <= 800))
                         {
                             //remove tabs
@@ -131,8 +138,10 @@ function checkScreen()
                             
                             
                         }
+                        //checks if screen width and browser width are more then 800px
                         if((screen_width > 800) && (browser_width > 800))
                         {
+                            //closes menu incase resize screen whle mobile menu open
                             close_menu();
                             //switch
                             document.getElementById("switchContainer_mobile").style.display = "none";
@@ -167,7 +176,7 @@ function checkScreen()
                         }
 
 }
-
+//checks screen on start
 checkScreen();
 
 //checks to see if browesr is resized, 
@@ -180,8 +189,61 @@ window.addEventListener('resize',
                         //Gets screen width and height
                         screen_width = screen.width;
                         screen_height = screen.height;
-                        
                         //calls function to adjsut website on screen and broswer dimensions
                         checkScreen();
-                        
                     });
+
+   /*
+    //if iphone user
+    if(iOS() && (screen_width <= 800))
+    {
+
+    }
+    //else if non iphone user
+    else
+    {
+        //var bi_one = '"../images/home/image_one_high.JPG"';
+        //alert("hi");
+        document.getElementById("para_image_one").style.backgroundImage = 'url(images/home/image_one_high.JPG)';
+    }
+   */
+
+//For image one, this function replaces the low res image with the high res image once they have fully loaded                    
+function show_high_res_image_one()
+{
+    "use strict";
+    document.getElementById("para_image_one").style.backgroundImage = 'url(images/home/image_one_high.JPG)';
+ 
+}
+//For image two, this function replaces the low res image with the high res image once they have fully loaded                    
+function show_high_res_image_two()
+{
+    "use strict";
+    document.getElementById("para_image_two").style.backgroundImage = "linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(images/home/image_two_high.jpg)";
+ 
+}
+//For image two, this function replaces the low res image with the high res image once they have fully loaded  
+function show_high_res_image_three()
+{
+    "use strict";
+    document.getElementById("para_image_divider").style.backgroundImage = "url(images/home/image_three_high.jpg)";
+ 
+}
+//For iphone image one, this function replaces the low res image with the high res image once they have fully loaded                    
+function show_iphone_high_res_image_one()
+{
+    "use strict";
+    document.getElementById("iphone_image_one").src = 'images/home/iphone_image_one_high.JPG';
+}
+//For iphone image two, this function replaces the low res image with the high res image once they have fully loaded                    
+function show_iphone_high_res_image_two()
+{
+    "use strict";
+    document.getElementById("iphone_para_image_two").style.backgroundImage = "linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(images/home/iphone_image_two_high.jpg)";
+}
+//For iphone image three, this function replaces the low res image with the high res image once they have fully loaded                    
+function show_iphone_high_res_image_three()
+{
+    "use strict";
+    document.getElementById("iphone_image_three").src = 'images/home/iphone_image_three_high.JPG';
+}

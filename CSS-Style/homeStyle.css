@@ -363,9 +363,9 @@ input:checked + .slider:before {
     padding: 15px 35px;
     background-color: #01729A;
 }
-.para_image_one
+#para_image_one
 {
-   background-image: url("../images/home/beach_image_one.JPG");
+   background-image: url("../images/home/image_one_low.JPG");
    
    height: 100%; 
    background-attachment: fixed;
@@ -390,7 +390,7 @@ input:checked + .slider:before {
 }
 #para_image_divider
 {
-   background-image: url("../images/home/sky.jpg");
+   background-image: url("../images/home/image_three_low.jpg");
    height:100%;
     
    background-attachment: fixed;
@@ -413,9 +413,9 @@ input:checked + .slider:before {
     background-color: black;
     text-align: center;
 }
-.para_image_two
+#para_image_two
 {
-   background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/home/mountains.jpg");
+   background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/home/image_two_low.jpg");
    height:auto;
    padding-bottom: 20vh;
    padding-top: 20vh;
@@ -682,7 +682,7 @@ input:checked + .slider:before {
 {
     display: none;
 }
-.iphone_para_image_two
+#iphone_para_image_two
 {
     display: none;
 }
@@ -708,7 +708,10 @@ input:checked + .slider:before {
     display: none;
         
 }
-
+.hidden_loading
+{
+    display: none;
+}
 
 
 @media only screen and (max-device-width:800px) 
@@ -877,7 +880,7 @@ input:checked + .slider:before {
     }
     .para_image_two
     {
-       background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/home/mountains.jpg");
+       background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/home/image_two_low.jpg");
        height:auto;
        padding-bottom: 10vh;
        padding-top: 10vh;
@@ -1014,7 +1017,7 @@ input:checked + .slider:before {
 	}
 	#para_image_divider
 	{
-	   background-image: url("../images/home/sky_mobile.jpg");
+	   background-image: url("../images/home/image_three_low.jpg");
 	   height:100%;
 
 	   background-attachment: fixed;
@@ -1084,17 +1087,17 @@ input:checked + .slider:before {
         border: 0px;
         display: block;
     }
-    .iphone_para_image_two
+    #iphone_para_image_two
     {
-       background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/home/mountains_iphone.jpg");
+       background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/home/iphone_image_two_low.jpg");
        width:100%;
        height: auto;
        padding-bottom: 10vh;
        padding-top: 10vh;
        background-attachment:scroll;
-       background-position: center;
+       background-position:center;
        background-repeat:no-repeat;
-       background-size:auto; 
+       background-size:cover; 
        display: block;
     }
     #iphone_center_text
