@@ -11,8 +11,8 @@ var swch = document.getElementById("switchOne");
 function switchLanguage() 
 {
     "use strict";
-    swch.checked = false;
-    window.location.href = "about.html";
+    swch.checked = true;
+    window.location.href = "span/about.html";
 }
 
 //shows mobile menu when click mobile menu button

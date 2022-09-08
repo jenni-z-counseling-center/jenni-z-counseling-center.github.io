@@ -7,11 +7,19 @@ var screen_height = screen.height;
 //variable to identify language switch
 var swch = document.getElementById("switchOne");
 
+window.onload = function() {
+    "use strict";
+    //alert("hello");
+    //swch.checked = true;
+   // window.location.href = "span/home.html";
+};
+
+
 //switch language to english by redirecting to other page with english text
 function switchLanguage() {
     "use strict";
-    swch.checked = false;
-    window.location.href = "about.html";
+    swch.checked = true;
+    window.location.href = "span/home.html";
 }
 
 //This function checks to see if this device is an apple os
